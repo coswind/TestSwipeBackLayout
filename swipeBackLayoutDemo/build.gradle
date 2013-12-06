@@ -6,6 +6,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:0.6.+'
     }
 }
+
 apply plugin: 'android'
 
 repositories {
@@ -19,10 +20,6 @@ android {
     compileSdkVersion 18
     buildToolsVersion "18.1.1"
 
-    defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 18
-    }
     buildTypes {
         release {
             runProguard false
@@ -39,5 +36,5 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:18.0.+'
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile 'me.imid.swipebacklayout:swipebacklayout:1.1-SNAPSHOT'
+    compile 'me.imid.swipebacklayout:library:1.0-SNAPSHOT'
 }
